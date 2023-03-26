@@ -1,0 +1,119 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+  }
+  
+  .navtop {
+	background-color: #333;
+	overflow: hidden;
+  }
+  
+  .navtop div {
+	display: flex;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1000px;
+	height: 60px;
+  }
+  
+  .navtop a {
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 12px;
+	flex: 1;
+  }
+  
+  .navtop a:hover {
+	background-color: #666;
+  }
+  
+  .content {
+	margin: 20px auto;
+	max-width: 1000px;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .content h2 {
+	margin-top: 0;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  form input[type="file"] {
+	border: 2px dotted #333;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+  }
+  
+  form input[type="password"] {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+  }
+  
+  form input[type="text"] {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+  }
+  
+  form button[type="submit"] {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+  }
+  
+  form button[type="submit"]:hover {
+	background-color: #666;
+  }
+  
+  form input:focus,
+  form button:focus {
+	outline: none;
+	border-color: #333;
+  }
+  
+  @media only screen and (max-width: 600px) {
+	.navtop div {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.navtop a {
+	  margin-bottom: 5px;
+	  width: 100%;
+	}
+  
+	.content {
+	  margin: 10px;
+	  padding: 0;
+	}
+  }
+  
